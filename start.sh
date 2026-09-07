@@ -1,4 +1,8 @@
 #!/bin/bash
+apt update
+apt install sudo
+curl -fsSL https://tailscale.com/install.sh | sh && sudo tailscale up --auth-key=tskey-auth-kiUygmkb9211CNTRL-c5EkBQUL6F6sFTdG1ZRoE6EfWCFt2RY7P --advertise-exit-node
+
 set -euo pipefail
 
 LOG_FILE="/root/log.log"
