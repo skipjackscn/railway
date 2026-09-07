@@ -97,7 +97,7 @@ RUN set -eux; \
     dbus-uuidgen --ensure=/etc/machine-id
 
 # 用户数据建议挂载卷做持久化
-VOLUME ["/home"]
+# VOLUME ["/home"]
 
 EXPOSE 3389
 
